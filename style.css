@@ -1,0 +1,301 @@
+/* ========================================
+   sakipiyo Portfolio - Iconic & Chic
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #09090b;
+  --bg-card: #18181b;
+  --bg-card-hover: #1f1f23;
+  --text: #fafafa;
+  --text-muted: #a1a1aa;
+  --text-subtle: #71717a;
+  --border: #27272a;
+  --border-hover: #3f3f46;
+  --gold: #d4a853;
+  --gold-dim: rgba(212, 168, 83, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Header ---- */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(9, 9, 11, 0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--text);
+}
+
+/* ---- Hero ---- */
+
+.hero {
+  padding: 10rem 2rem 6rem;
+  text-align: center;
+}
+
+.hero-greeting {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+
+.hero-line {
+  width: 48px;
+  height: 1px;
+  background: var(--gold);
+  margin: 2.5rem auto 0;
+}
+
+/* ---- Section Title ---- */
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+/* ---- Works ---- */
+
+.works {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 2rem 6rem;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ---- Card ---- */
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: background 0.3s, border-color 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  padding: 2rem 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--accent);
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-icon svg {
+  opacity: 1;
+}
+
+.card-body {
+  padding: 1.5rem 2rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+.card-subtitle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-subtle);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.9rem;
+}
+
+.card-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.card-tags span {
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 100px;
+  background: var(--gold-dim);
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+.card-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.card-link::after {
+  content: "\2192";
+  transition: transform 0.3s;
+}
+
+.card:hover .card-link {
+  color: var(--gold);
+}
+
+.card:hover .card-link::after {
+  transform: translateX(4px);
+}
+
+/* ---- Footer ---- */
+
+.footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-subtle);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 600px) {
+  .header-inner {
+    padding: 0 1.2rem;
+  }
+
+  .hero {
+    padding: 8rem 1.2rem 4rem;
+  }
+
+  .works {
+    padding: 1.5rem 1.2rem 4rem;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    gap: 1.2rem;
+  }
+
+  .card-body {
+    padding: 1.2rem 1.5rem 1.5rem;
+  }
+
+  .card-icon {
+    padding: 1.5rem 1.5rem 0;
+  }
+}

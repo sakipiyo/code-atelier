@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sakipiyo | Code Atelier</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">sp.</a>
+      <nav class="nav">
+        <a href="#works">Works</a>
+        <a href="https://github.com/sakipiyo" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <p class="hero-greeting">Code Atelier</p>
+    <h1 class="hero-name">sakipiyo</h1>
+    <div class="hero-line"></div>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="works">
+    <h2 class="section-title">Works</h2>
+
+    <div class="works-grid">
+
+      <!-- 1. pichamo-trade -->
+      <article class="card">
+        <div class="card-icon" style="--accent: #3b82f6;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">ぴちゃもトレード</h3>
+          <p class="card-subtitle">pichamo-trade</p>
+          <p class="card-desc">初心者向け株式投資学習&仮想トレードアプリ。ローソク足チャート、テクニカル指標（SMA/EMA/RSI/MACD/ボリンジャーバンド）、売買シグナルゲージ、ポートフォリオ管理。</p>
+          <div class="card-tags">
+            <span>React</span><span>TypeScript</span><span>FastAPI</span><span>PostgreSQL</span><span>TradingView Charts</span>
+          </div>
+          <a href="https://github.com/sakipiyo/pichamo-trade" target="_blank" rel="noopener" class="card-link">View on GitHub</a>
+        </div>
+      </article>
+
+      <!-- 2. chatbot-demo -->
+      <article class="card">
+        <div class="card-icon" style="--accent: #8b5cf6;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">AI Chatbot Widget</h3>
+          <p class="card-subtitle">chatbot-demo</p>
+          <p class="card-desc">Webサイト埋め込み型AIチャットボット。OpenAI API活用のSSEストリーミング対応。4種類のAI役割プリセット切替機能付き。</p>
+          <div class="card-tags">
+            <span>React</span><span>TypeScript</span><span>Express</span><span>OpenAI API</span><span>SSE</span><span>Docker</span>
+          </div>
+          <a href="https://github.com/sakipiyo/chatbot-demo" target="_blank" rel="noopener" class="card-link">View on GitHub</a>
+        </div>
+      </article>
+
+      <!-- 3. mimikopibass -->
+      <article class="card">
+        <div class="card-icon" style="--accent: #ec4899;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">mimikopibass</h3>
+          <p class="card-subtitle">楽曲ベース自動分離 & TAB譜生成</p>
+          <p class="card-desc">楽曲ファイルからベースラインを自動分離し、TAB譜を生成する音声処理アプリ。Demucs v4 + basic-pitchによるAI音源分離&ピッチ検出。</p>
+          <div class="card-tags">
+            <span>React</span><span>TypeScript</span><span>FastAPI</span><span>Demucs</span><span>alphaTab</span><span>Docker</span>
+          </div>
+          <a href="https://github.com/sakipiyo/mimikopibass" target="_blank" rel="noopener" class="card-link">View on GitHub</a>
+        </div>
+      </article>
+
+      <!-- 4. restaurant-portfolio -->
+      <article class="card">
+        <div class="card-icon" style="--accent: #f59e0b;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Trattoria Sakura</h3>
+          <p class="card-subtitle">restaurant-portfolio</p>
+          <p class="card-desc">架空イタリアンレストランの公開サイト+管理画面。LP、メニュー、ニュース、予約管理、ダッシュボードを備えたフルスタック構成。</p>
+          <div class="card-tags">
+            <span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>Supabase</span><span>JWT</span>
+          </div>
+          <a href="https://github.com/sakipiyo/restaurant-portfolio" target="_blank" rel="noopener" class="card-link">View on GitHub</a>
+        </div>
+      </article>
+
+      <!-- 5. tweet_generator -->
+      <article class="card">
+        <div class="card-icon" style="--accent: #14b8a6;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">ことばの灯り</h3>
+          <p class="card-subtitle">tweet_generator</p>
+          <p class="card-desc">心理学の知見をもとに、しんどい気持ちに寄り添うツイートを生成するアプリ。テーマ選択から生成、履歴管理、お気に入り機能を搭載。</p>
+          <div class="card-tags">
+            <span>React</span><span>TypeScript</span><span>Apollo Server</span><span>GraphQL</span><span>Claude API</span><span>PostgreSQL</span>
+          </div>
+          <a href="https://github.com/sakipiyo/tweet_generator" target="_blank" rel="noopener" class="card-link">View on GitHub</a>
+        </div>
+      </article>
+
+      <!-- 6. picatwalk -->
+      <article class="card">
+        <div class="card-icon" style="--accent: #f97316;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 8l.01 0"/><path d="M16 8l.01 0"/><path d="M9 13c.5 1 1.5 2 3 2s2.5-1 3-2"/></svg>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">PicatWalk</h3>
+          <p class="card-subtitle">2D 猫ライフシミュレーション</p>
+          <p class="card-desc">猫になって歩き、ご飯を食べ、部屋をデコレーションする横スクロール2Dゲーム。猫キャラカスタマイズ、アクセサリー装備機能を搭載。</p>
+          <div class="card-tags">
+            <span>Unity 6</span><span>C#</span><span>2D</span><span>Input System</span>
+          </div>
+          <a href="https://github.com/sakipiyo/picatwalk" target="_blank" rel="noopener" class="card-link">View on GitHub</a>
+        </div>
+      </article>
+
+      <!-- 7. omoideppi -->
+      <article class="card">
+        <div class="card-icon" style="--accent: #f43f5e;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">おもいでっぴ</h3>
+          <p class="card-subtitle">omoideppi</p>
+          <p class="card-desc">大切な人との思い出を記録するモバイルアプリ。出会ってからの経過日数表示、写真管理、タイムライン機能。</p>
+          <div class="card-tags">
+            <span>React Native</span><span>Expo</span><span>TypeScript</span><span>SQLite</span><span>AdMob</span>
+          </div>
+          <a href="https://github.com/sakipiyo/omoideppi" target="_blank" rel="noopener" class="card-link">View on GitHub</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 sakipiyo</p>
+  </footer>
+
+</body>
+</html>
